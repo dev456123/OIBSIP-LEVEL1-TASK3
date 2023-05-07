@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <style>
+        body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+            }
+
+      h1{
+        text-align: center;
+        margin-top: 50px;
+        }
+
+      #form{
+        margin: 50px auto;
+        width: 400px;
+        background-color: #5e5050;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(249, 240, 240, 0.3);
+            }
+
+      label{
+        display: block;
+        margin-bottom: 10px;
+        color: whitesmoke;
+            }
+
+      input[type="number"]{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #241c1c;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        }
+
+      select{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 16px;
+            }
+
+      button{
+        background-color: #087038;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+            }
+
+      #output{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 24px;
+            }
+    </style>
+  </head>
+  <body>
+    <h1>Temperature Converter</h1>
+    <form id="form">
+      <label for="temp">Temperature:</label>
+      <input type="number" id="temp" placeholder="Enter temperature" required>
+      <label for="unit">Unit:</label>
+      <select id="unit">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+      </select>
+      <button type="button" id="convert">Convert</button>
+      <div id="output"></div>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
